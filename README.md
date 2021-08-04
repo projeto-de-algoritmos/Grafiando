@@ -1,27 +1,22 @@
 **!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
 Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
+ - Grafos1 
  
  **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
  
  (Apague essa seção)
 
-# NomedoProjeto
+# RockNRollFamilyTree
 
 **Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0015834 |  Eliseu Kadesh Rosa Assunção Júnior  |
+| 17/0142329 |  Francisco Emanoel Ferreira da Penha |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
@@ -30,8 +25,8 @@ Descreva os objetivos do seu projeto e como ele funciona.
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
+**Linguagem**: Javascript<br>
+**Framework**: React.js<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 ## Uso 
