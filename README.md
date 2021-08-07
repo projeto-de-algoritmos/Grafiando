@@ -9,7 +9,7 @@ Temas:
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| 18/0015834 |  Eliseu Kadesh Rosa Assunção Júnior  |
+| 19/0105381 |  Edson de Araújo Soares  |
 | 17/0142329 |  Francisco Emanoel Ferreira da Penha |
 
 ## Sobre 
