@@ -255,9 +255,7 @@ int main(void)
 {
   int v, a, inicial, T;
   vertex s, t;
-  scanf("%d", &T);
-  while (T--)
-  {
+
     passos = 0;
     scanf("%d", &inicial);
     scanf("%d %d", &v, &a);
@@ -272,8 +270,12 @@ int main(void)
 
     GRAPHbfs(g, inicial);
 
-    printf("%d\n", passos);
-
+    printf("##############################################################\n");
+    printf("### O Minimo de passos para gerar esse mapa, são %d passos ###\n",passos);
+    printf("##############################################################\n");
+   
+   
+  
     GRAPHdestroy(g);
-  }
+  
 }
