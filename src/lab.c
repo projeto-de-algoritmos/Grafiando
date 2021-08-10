@@ -42,10 +42,7 @@ Graph GRAPHinit(int V);
 static link NEWnode(vertex w, link next);
 Edge EDGE(vertex v, vertex w);
 void GRAPHinsert(Graph G, Edge E);
-void GRAPHremove(Graph G, Edge E);
 int GRAPHEdges(Edge[], Graph G);
-void GRAPHshow(Graph G);
-Graph GRAPHcopy(Graph G);
 void GRAPHdestroy(Graph G);
 
 /* Funções básicas para construção e manipulação de grafos */
@@ -96,53 +93,6 @@ void GRAPHinsert(Graph G, Edge E)
   G->adj[w] = NEWnode(v, G->adj[w]);
   G->E++;
 }
-
-/* Remoção de uma aresta do grafo */
-
-void GRAPHremove(Graph G, Edge E)
-{
-
-  vertex v = E.v, w = E.w;
-  link a;
-
-  for (a = G->adj[v]; a != NULL; a = a->next)
-  {
-    if (a->w == w)
-    {
-      free(a);
-      break;
-    }
-  }
-
-  link b;
-
-  for (b = G->adj[w]; b != NULL; b = b->next)
-  {
-    if (b->w == v)
-    {
-      free(b);
-      break;
-    }
-  }
-  G->E--;
-}
-/*int GRAPHEdges(Edge[], Graph G);*/
-
-/* Impressão do grafo */
-
-void GRAPHshow(Graph G)
-{
-  vertex v;
-  for (v = 0; v < G->V; v++)
-  {
-    printf("%2d:", v);
-    link a;
-    for (a = G->adj[v]; a != NULL; a = a->next)
-      printf("%2d", a->w);
-    printf("\n");
-  }
-}
-/*Graph GRAPHcopy(Graph G);*/
 
 /* Destroi o grafo */
 
@@ -256,23 +206,25 @@ int main(void)
   int v, a, inicial, T;
   vertex s, t;
 
-    passos = 0;
-    scanf("%d", &inicial);
-    scanf("%d %d", &v, &a);
+    passos = 2;
+    scanf("%d", &inicial); // Posição inicial do entregador
+    scanf("%d %d", &v, &a); // v = quantidades de pontos de entregas, a = quantidade de ruas para a entrega
     Graph g = GRAPHinit(v);
 
     while (a--)
     {
-      scanf("%d %d", &s, &t);
+      scanf("%d %d", &s, &t); // conexão entre os pontos de entrega de jornais.
       Edge e = EDGE(s, t);
       GRAPHinsert(g, e);
     }
 
     GRAPHbfs(g, inicial);
 
-    printf("##############################################################\n");
-    printf("### O Minimo de passos para gerar esse mapa, são %d passos ###\n",passos);
-    printf("##############################################################\n");
+    int km = 2*passos;
+
+    printf("##################################################################\n");
+    printf("### A distnância percorrida durante um dia de trabalho é de %dkm.###\n",km);
+    printf("##################################################################\n");
    
    
   
