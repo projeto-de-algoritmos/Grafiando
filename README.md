@@ -19,6 +19,10 @@ Temas:
 
 ## Screenshots
 
+![](https://raw.githubusercontent.com/projeto-de-algoritmos/Grafiando/master/assets/print1.png)
+![](https://raw.githubusercontent.com/projeto-de-algoritmos/Grafiando/master/assets/print2.png)
+![](https://raw.githubusercontent.com/projeto-de-algoritmos/Grafiando/master/assets/print3.png)
+
 
 ## Instalação 
 **Linguagem**: Python3 e C.<br>
@@ -42,9 +46,7 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-- O programa é executado a partir do arquivo lab.py, que ler o arquivo de entradas.txt.
-- A primeira entrada do arquivo marca o ponto de origem para a criação da rota. As duas entradas subsequentes, são as entradas que marcam a quantidade de pontos e quantidades de ruas. Pontos que o entregador precisa entregar o jornal e as ruas que ele necessariamente precisa percorrer.
-- No terminal execute o comando make start (Certifique-se que o makefile esteja instalado no seu computador) 
+O programa é executado a partir do arquivo lab.py, que ler arquivo entradas.txt as entradas do arquivo txt
 
 ## Outros
 ### Outras informações sobre o projeto.
@@ -54,6 +56,8 @@ Explique como usar seu projeto caso haja algum passo a passo após o comando de 
     - ter o python instalado, junto com as bibliotecas:
         - networkx
         - matplotlib.
+- Para deixar a execução do programa mais fácil, você pode instalar e utilizar o makefile para rodar o código.
+
 - Para plotar o grafo, este projeto utiliza as bibliotecas networkx e matplotlib junto com o python.
 
 ## Histórico de revisão
